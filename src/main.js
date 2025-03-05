@@ -308,7 +308,7 @@ function LeftContainerHTML(string) {
         doneButton.style.width = "90%";
         doneButton.style.height = "20%";
         doneButton.style.fontSize = "50px";
-        doneButton.style.borderRadius = "7%";
+        doneButton.style.borderRadius = "16px";
     }
 }
 
@@ -403,7 +403,7 @@ function onMouseClick(event) {
             LeftContainerHTML(`
                 <h1 class='instructions'>Select the part(s) of the body where you feel pain</h1>
                 <p style="font-size: 20px"> Body parts selected: ${state.partsSelected.join(", ")}</p>
-                <button class="done-button" id="doneButton">Done</button>
+                <button class="done-button button-1" id="doneButton">Done</button>
             `);
         }
     }
@@ -433,7 +433,7 @@ document.getElementById('startButton').addEventListener('click', function() {
     LeftContainerHTML(`
         <h1 class='instructions'>Select the part(s) of the body where you feel pain</h1>
         <p style="font-size: 20px"> Body parts selected: ${state.partsSelected}</p>
-        <button class="done-button" id="doneButton">Done</button>
+        <button class="done-button button-1" id="doneButton">Done</button>
     `);
     LeftContainer();
 
